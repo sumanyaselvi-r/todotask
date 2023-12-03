@@ -1,0 +1,15 @@
+.todo-item {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .todo-item.complete {
+    background-color: green;
+  }
+  
+  .todo-item.not-complete {
+    background-color: red;
+  }
+  
