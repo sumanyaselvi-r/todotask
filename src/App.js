@@ -5,7 +5,7 @@ import TodoForm from './AddList';
 import StatusFilter from './StatusFilter';
 
 const Todo = () => {
-  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todo_list')));
+  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todo_list'))||[]);
   const [editingIndex, setEditingIndex] = useState(null);
   const [statusFilter, setStatusFilter] = useState('all');
 
