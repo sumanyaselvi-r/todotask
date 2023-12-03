@@ -9,11 +9,11 @@ const TodoItem = ({ todo, onEdit, onRemove, onStatusChange }) => {
         <>
 
             <div className='col-lg-4 mt-2'>
-                <div class="card" style={{ fontFamily: "Times new Roman", fontSize: "20px", backgroundColor: "rgb(184, 223, 196)" }}>
+                <div className="card" style={{ fontFamily: "Times new Roman", fontSize: "20px", backgroundColor: "rgb(184, 223, 196)" }}>
 
-                    <div class="card-body">
-                        <h5 class="card-title">Name:{task}</h5>
-                        <p class="card-text">Descritption :{description}</p>
+                    <div className="card-body">
+                        <h5 className="card-title">Name:{task}</h5>
+                        <p className="card-text">Descritption :{description}</p>
                         <label>
                             Status:
                             <select value={status} onChange={(e) => onStatusChange(e.target.value)} className={`todo-item ${status}`} style={{ backgroundColor: bgColor, color: "white" }}>

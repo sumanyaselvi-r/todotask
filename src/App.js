@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import TodoList from './ListItem';
 import TodoForm from './AddList';
-import StatusFilter from './Filter';
+import StatusFilter from './StatusFilter';
 
 const Todo = () => {
   const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todo_list')));
